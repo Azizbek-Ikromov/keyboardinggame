@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordBeater</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-dark text-white ">
+    <header class="bg-secondary text-center p-2 mb-5">
+        <h1>Type Test</h1>
+    </header>
+    <div class="container text-center">
+        <!-- Word & Input -->
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <p class="lead">Type The Given Word Within
+                    <span class="text-success" id="seconds">5</span> Seconds:</p>
+                <h2 class="display-2 mb-5" id="current-word">hello</h2>
+                <div class="btn-group btn-group-lg">
+                    <button id="demo" onclick="shart1()" type="button" class="btn btn-primary"><a href="./easy.html" style="text-decoration: none; color: white;">Easy</a></button>
+                    <button onclick="shart2()" type="button" class="btn btn-warning"><a href="./medium.html" style="text-decoration: none; color: black;">Medium</a></button>
+                    <button onclick="shart3()" type="button" class="btn btn-danger"><a href="./hard.html" style="text-decoration: none; color: white;">Hard</a></button>
+                </div><br><br>
+                <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input"
+                    autofocus>
+                <h4 class="mt-3" id="message"></h4>
+                <!-- Time & Score Columns -->
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h3>Time Left:
+                            <span id="time">0</span>
+                        </h3>   
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Score:
+                            <span id="score">0</span>
+                        </h3>
+                    </div>
+                </div>
+                <!-- Instructions -->
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <div class="card card-body bg-secondary text-white">
+                            <h5>Instructions</h5>
+                            <p>
+                                Type each word in the given amount of seconds to score.
+                                To play again, just type the current word.
+                                Your score will reset!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/medium.js"></script>
+</body>
+
+</html>
